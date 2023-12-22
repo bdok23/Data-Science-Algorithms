@@ -35,3 +35,17 @@ class NeuralNet(object):
 
     def learn(self, inputs):
         return self.__sigmoid(dot(inputs, self.synaptic_weights))
+    
+if __name__ == "__main__":
+    # Initialize
+    neural_network = NeuralNet()
+
+    # The training set
+    inputs = array([[0, 1, 1], [1, 0, 0], [1, 0, 1]])
+    outputs = array([[1, 0, 1]]).T
+
+    # Train the neural network
+    neural_network.train(inputs, outputs, 10000)
+
+    # Test the neural network with a test example
+    print(neural_network.learn(array([1, 0, 1])))
