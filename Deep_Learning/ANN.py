@@ -1,3 +1,5 @@
+## This is an implementation of an ANN with backpropagation from scratch (no outside libraries)
+
 from joblib.numpy_pickle_utils import xrange
 from numpy import *
 
