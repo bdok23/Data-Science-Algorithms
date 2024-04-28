@@ -10,11 +10,11 @@ batch_size and epochs are the main hyperparameters of the gradient descent alg
 
 steps_per_epoch gives the number of batches looked at per epoch (which will overwrite the default number of batches = total training dataset / batch_size)
 
-batch gradient descent - batch_size = full training dataset
+batch gradient descent -> batch_size = full training dataset
     - model parameters are updated once after each epoch of training
     - computationally efficient (no need to calculate gradient often)
 
-stochastic gradient descent - batch_size = 1
+stochastic gradient descent -> batch_size = 1
     - models parameters are updated after each training example
     - very computationally expensive
 
